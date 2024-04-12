@@ -1,0 +1,59 @@
+.why-choose-us {
+  background: url("./../images/why-choose-us/bg.png") no-repeat;
+  background-position-x: calc(50% - 482px);
+  background-position-y: bottom;
+  padding-top: clamp(40px, 8vw, 92px);
+  padding-bottom: clamp(40px, 8vw, 85px);
+  @include tablet {
+    background: none;
+  }
+  &__inner {
+    display: flex;
+    justify-content: end;
+    @include tablet {
+      justify-content: center;
+    }
+  }
+  &__body {
+  }
+  &__button {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 42px;
+    }
+  }
+
+  &__steps {
+    display: grid;
+    gap: 31px;
+    max-width: 451px;
+  }
+
+  &__step {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    &-body {
+      display: grid;
+      gap: 14px;
+    }
+
+    &-title {
+      @include tablet {
+        font-size: 18px;
+      }
+    }
+
+    &-text {
+      color: #6d6d6d;
+      @include tablet {
+        font-size: 14px;
+      }
+    }
+  }
+}

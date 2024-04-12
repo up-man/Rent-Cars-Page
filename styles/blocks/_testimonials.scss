@@ -1,0 +1,66 @@
+.testimonials {
+  padding-bottom: clamp(60px, 16.6vw, 87px);
+  display: flex;
+  flex-direction: column;
+  background: #f7fbff;
+  &__header {
+    padding-top: clamp(60px, 16.6vw, 127px);
+    padding-bottom: clamp(20px, 5.2vw, 39px);
+    position: relative;
+    text-align: center;
+    width: 100%;
+    @include mobile {
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+    &::after {
+      content: "";
+      width: 279px;
+      height: 219px;
+      background: url("./../images/testimonials/quotes-closed.svg") center / contain no-repeat;
+      position: absolute;
+      top: 0;
+      right: -34px;
+      @include desktop {
+        width: 140px;
+        height: 110px;
+        right: 20px;
+      }
+    }
+    &::before {
+      content: "";
+      width: 292px;
+      height: 317px;
+      background: url("./../images/testimonials/quotes-open.svg") center / contain no-repeat;
+      position: absolute;
+      bottom: -134px;
+      left: -3px;
+      @include desktop {
+        width: 146px;
+        height: 158px;
+        bottom: -90px;
+        left: 20px;
+      }
+    }
+  }
+
+  &__button {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__title {
+  }
+
+  &__list {
+    max-width: 2500px;
+  }
+
+  &__item {
+    width: auto !important;
+    padding: 30px 20px 40px;
+  }
+}

@@ -1,0 +1,64 @@
+.download {
+  background: url("./../images/download/bg.svg") left / auto 100% no-repeat;
+  background-position-x: calc(50% - 518px);
+  overflow: hidden;
+  @media (max-width: 1160px) {
+    background-position-x: -384px;
+  }
+  @include mobile {
+    background: url("./../images/download/bg-left.svg") left / auto 100% no-repeat;
+  }
+  @include mobile-s {
+    background-size: 140%;
+  }
+  &__inner {
+    position: relative;
+    padding-top: clamp(28px, 13vw, 100px);
+    padding-bottom: clamp(28px, 13vw, 100px);
+
+    &::after {
+      content: url("./../images/download/iphone.png");
+      position: absolute;
+      bottom: 0;
+      right: -60px;
+      width: 521px;
+      height: 428px;
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+  &__button {
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
+  }
+
+  &__title {
+    font-size: clamp(28px, 6.3vw, 48px);
+    line-height: 1.2;
+    max-width: 480px;
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__text {
+    color: #3e3e3e;
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__apps {
+    display: flex;
+    gap: 16px;
+    img {
+      width: 175px;
+      height: auto;
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
+  }
+}

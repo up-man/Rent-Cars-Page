@@ -1,0 +1,23 @@
+.soc1als {
+  &__title {
+    color: var(--color-light);
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 27px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  &__item {
+    &:hover {
+      color: var(--color-light);
+      transform: scale(1.05);
+    }
+  }
+
+  &__link {
+  }
+}
