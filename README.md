@@ -1,5 +1,5 @@
 # Сайт Rentcars
-Адаптивная [страничка](https://up-man.github.io/Rent-Cars-Page/)
+Адаптивная [страничка](https://up-man.github.io/rentcars-page/)
 
 ## Примененные навыки:
 - Предпроцессор SCSS (использовался плагин eCSStractor)
