@@ -583,6 +583,8 @@ h3,
 .popular-deals {
   padding-top: clamp(40px, 7.3vw, 84px);
   padding-bottom: clamp(40px, 7.3vw, 83px);
+  padding-left: 4px;
+  padding-right: 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -594,46 +596,15 @@ h3,
   text-align: center;
 }
 .popular-deals__title:not(:last-child) {
-  margin-bottom: clamp(40px, 8.4vw, 53px);
-}
-.popular-deals__list {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
-}
-@media (max-width: 1160px) {
-  .popular-deals__list {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 900px) {
-  .popular-deals__list {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 600px) {
-  .popular-deals__list {
-    grid-template-columns: 1fr;
-  }
+  margin-bottom: clamp(10px, 3.2vw, 23px);
 }
 .popular-deals__list:not(:last-child) {
-  margin-bottom: clamp(40px, 8.4vw, 64px);
+  margin-bottom: clamp(10px, 4.4vw, 34px);
 }
-@media (max-width: 1160px) {
-  .popular-deals__item:nth-child(4) {
-    display: none;
-  }
+.popular-deals__item {
+  padding: 30px 16px;
 }
-@media (max-width: 900px) {
-  .popular-deals__item:nth-child(3) {
-    display: none;
-  }
-}
-@media (max-width: 600px) {
-  .popular-deals__item:nth-child(2) {
-    display: none;
-  }
-}
+
 .car-card {
   padding: 24px;
   box-shadow: 0px 12px 24px 0px rgba(16, 76, 139, 0.16);
@@ -642,6 +613,7 @@ h3,
 }
 .car-card__image {
   display: flex;
+  justify-content: center;
   align-items: center;
   height: 106px;
   margin-bottom: 23px;
